@@ -1,0 +1,99 @@
+/*colors*/
+/*margins shadows, ...*/
+.h100 {
+  height: 95vh !important;
+  overflow-y: scroll;
+}
+
+.s-bg-primary {
+  background-color: #6668d3;
+}
+
+.s-light {
+  color: #f4f7f7;
+}
+
+.s-mt-60 {
+  margin-top: 60px !important;
+}
+
+.s-mt-40 {
+  margin-top: 40px;
+}
+
+.s-responsive {
+  width: 100% !important;
+}
+
+.s-mobile {
+  width: 60% !important;
+  height: 600px;
+  margin: 20px auto;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .s-mobile {
+    width: 90% !important;
+    height: 600px;
+    margin: 20px auto;
+    margin-bottom: 20px;
+  }
+}
+
+.center-aside {
+  width: 63.334%;
+  margin-top: 60px;
+  margin-left: 20%;
+}
+
+/*medium  devices*/
+@media (min-width: 768px) {
+  .left-aside {
+    position: fixed;
+    left: 0 !important;
+    top: 60px;
+    width: 19.333% !important;
+    height: 100vh;
+    overflow-y: scroll !important;
+  }
+  .s-right-aside {
+    position: fixed;
+    right: 0;
+    top: 60px;
+    height: 100vh;
+    overflow: scroll;
+    width: 16.333% !important;
+  }
+}
+
+/*small devicses*/
+@media (max-width: 768px) {
+  .left-aside {
+    position: static;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+  .s-right-aside {
+    position: static;
+    top: 60px;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
+  .center-aside {
+    padding: 16px;
+    width: 100%;
+    margin: 0;
+    margin-top: 60px;
+  }
+  .logo {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=custum.css.map */

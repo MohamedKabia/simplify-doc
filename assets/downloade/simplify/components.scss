@@ -1,0 +1,1128 @@
+@import './variables';
+/*extra small to small devices*/
+.s-btn, .s-btn-lg, .s-btn-md,.s-btn-round{
+    display: inline-block;
+    text-transform: capitalize;
+    &:hover{
+        background: $btnhover;
+        color: $white;
+    }
+}
+.s-btn, .s-btn-lg, .s-btn-md{
+    border-width:0;
+    outline: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: $transition;
+}
+
+.s-btn{
+    padding: 10px 32px;
+    text-align: center;
+}
+.s-btn-md{
+    padding: 12px 35px;
+}
+
+.s-btn-lg{
+    padding: 15px 40px;
+}
+.s-btn-primary{
+    background: $primary;
+    color: $white;
+    &:hover{
+        background:rgba($primary, .8);
+    }
+}
+
+.s-btn-secondary{
+    background: $secondary;
+    color: $white;
+    &:hover{
+        background:rgba($secondary, .8);
+    }
+}
+
+.s-btn-danger{
+    background: $danger;
+    color: $white;
+    &:hover{
+        background:rgba($danger, .8);
+    }
+}
+
+.s-btn-info{
+    background: $info;
+    color: $white;
+    &:hover{
+        background: rgba($info, .8);
+    }
+}
+
+.s-btn-dark{
+    background: $dark;
+    color: $white;
+    &:hover{
+        background:rgba($dark, .8);
+    }
+}
+.s-btn-light{
+    background: $light;
+    color: $dark;
+    &:hover{
+        background:rgba($light, .8);
+        color:  $dark;
+    }
+}
+
+.s-btn-primary-outline{
+    border:1px solid $primary;
+    background: none;
+    &:hover{
+        background:$primary;
+        color: $white;
+    }
+}
+button::-moz-focus-inner {
+    border: 0;
+}
+.s-btn-secondary-outline{
+    border:1px solid $secondary;
+    background: none;
+    &:hover{
+        background:$secondary;
+        color: $white;
+    }
+    &:active{
+        box-shadow: $shadow2;
+    }
+}
+
+.s-btn-danger-outline{
+    border:1px solid $danger;
+    background: none;
+    &:hover{
+        background:$danger;
+        color: $white;
+    }
+}
+
+.s-btn-info-outline{
+    border:1px solid $info;
+    background: none;
+    &:hover{
+        background:$info;
+        color: $white;
+    }
+}
+
+.s-btn-dark-outline{
+    border:1px solid $dark;
+    background: none;
+    &:hover{
+        background:$dark;
+        color: $white;
+    }
+}
+.s-btn-block{
+    width:100%;
+    text-align: center;
+}
+.s-primary-outline{
+    border: 1px solid $primary ;
+}
+.s-secondary-outline{
+    border: 1px solid $secondary ;
+}
+.s-danger-outline{
+    border: 1px solid $danger ;
+}
+.s-info-outline{
+    border: 1px solid $info ;
+}
+.s-warning-outline{
+    border: 1px solid $warning ;
+}
+.s-soft-secondary{
+    box-shadow: 0 0 0 2px $secondary, 
+    0 0 0 4px #FFFFFF,inset 0  4px 4px rgba(255, 255, 255,.5);
+    &:hover{
+       background-color: $secondary; 
+    }
+}
+
+.s-soft-primary{
+    box-shadow: 0 0 0 2px $primary, 
+    0 0 0 4px #FFFFFF,inset 0  4px 4px rgba(255, 255, 255,.5);
+    &:hover{
+       background-color: $primary; 
+    }
+}
+.s-soft-danger{
+    box-shadow: 0 0 0 2px $danger, 
+    0 0 0 4px #FFFFFF,inset 0  4px 4px rgba(255, 255, 255,.5);
+    &:hover{
+       background-color: $danger; 
+    }
+}
+.s-soft-dark{
+    box-shadow: 0 0 0 2px $dark, 
+    0 0 0 4px #FFFFFF,inset 0  4px 4px rgba(255, 255, 255,.5);
+    &:hover{
+       background-color: $dark; 
+    }
+}
+.s-soft-light{
+    box-shadow: 0 0 0 2px $light, 
+    0 0 0 4px #FFFFFF,inset 0  4px 4px rgba(255, 255, 255,.5);
+    &:hover{
+       background-color: $light; 
+    }
+}
+.s-soft-info{
+    box-shadow: 0 0 0 2px $info, 
+    0 0 0 4px #FFFFFF,inset 0  4px 4px rgba(255, 255, 255,.5);
+    &:hover{
+       background-color: $info; 
+    }
+}
+.s-checkbox-switch{
+    width: 55px;
+    height: 25px;
+    border-radius: 12px;
+    border: 0;
+    outline: none;
+    appearance: none;
+    background: #e6e4e4;
+    transition: .4s;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: 1.5px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: #fff;
+        transition:.4s;
+        box-shadow: $shadow;
+    }
+    &:hover::before{
+        box-shadow:0 0 8px 8px #9c9c9cb4;
+    }
+    &:checked::before{
+        background: #fff;
+        left:32px;
+        transition:.4s;
+    }
+}
+
+/*-----------------table---------------*/
+.s-table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: $shadow1;
+    font-size: 0.8753rem;
+    color: $dark;
+    border-radius: 4px;
+    background-color: $white;
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }  
+  }
+  .s-table.simple{
+      tr td, tr th{
+        border: 0;
+        border-bottom: 1px solid rgba($dark, .5);
+    }
+  }
+  .s-table tr td:hover {
+      background-color:rgba($light, .8);
+      margin:10px;
+    }
+  .s-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: normal;    
+  }
+  .s-table.s-transparent{
+      background-color: transparent;
+      box-shadow: none !important;
+      .s-table td, .s-table th{
+          border: 1px solid transparent !important;
+          color: white;
+          border-spacing: 5px;
+      }
+
+  }
+  .s-table.s-no-border{
+      td, th{
+        border: 0 !important;
+      }
+  }
+  .s-table.s-tr-space{
+    border-collapse:separate; 
+    border-spacing: 0 10px; 
+  }
+/*check box thim*/
+.s-checkbox-switch.s-primary{
+    &:checked{
+        background:$primary;
+    }
+    &:checked::before{
+        background:$white;
+    }
+    &:checked:hover::before{
+        box-shadow: $lightgray;
+    }
+}
+.s-checkbox-switch.s-secondary{
+    &:checked{
+        background:$secondary;
+    }
+    &:checked::before{
+        background:$white;
+    }
+    &:checked:hover::before{
+        box-shadow:0 0 8px 8px rgba($secondary, .5);
+        }
+}
+.s-checkbox-switch.s-danger{
+    &:checked{
+        background:$danger;
+    }
+    &:checked::before{
+        background:$white;
+    }
+    &:checked:hover::before{
+        box-shadow:0 0 8px 8px rgba($danger, .5);
+        }
+}
+
+.s-checkbox-switch.s-dark{
+    &:checked{
+        background:$dark;
+    }
+    &:checked::before{
+        background:$white;
+    }
+    &:checked:hover::before{
+        box-shadow:0 0 8px 8px #656866b4;
+    }
+}
+
+/* radio ------------------------*/
+.s-radio{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    background: #e4e3e3;
+    appearance: none;
+    position: relative;
+    &:checked{
+        border:2px solid $checkprimary;
+    }
+    &::after{
+        content: '';
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        position: absolute;
+        top:6px;
+        left: 6px;
+        background:$checkprimary;
+        z-index: 2;
+        visibility: hidden;
+    }
+    &:checked::after{
+        visibility:visible;
+    }
+
+}
+/*radio them------------------------------*/
+.s-radio.s-secondary{
+    &:checked{
+        border:2px solid $secondary;
+    }
+    &::after{
+        background: $secondary;
+    }
+}
+
+/* range ------------------------------*/
+.s-range{
+    width: 100%;
+    height: 5px;
+    background: #e6e4e4;
+    outline: none;
+    appearance: none;
+    position: relative;
+    &::-webkit-slider-thumb{
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $primary;
+    }
+    &::-webkit-slider-thumb:hover{
+        box-shadow:0 0 8px 8px #938fccb4;
+        }
+    &::-moz-range-thumb{
+        appearance: none;
+    }
+    
+}
+ //input -------------------------------------
+ .s-input, .s-input-fild{
+    background: transparent;
+    padding: 10px;
+    cursor: auto;
+    border-radius: 4px;
+    padding:10px 17px;
+    background:none;
+    background-image:none;
+    border:1px solid $dark;
+    border-radius: 5px;
+    &:focus {
+          outline:0;
+    } 
+}
+.s-input-outline-primary{
+  border: 1px solid $primary;
+}
+
+.s-input-outline-secondary{
+  border: 1px solid $secondary;
+}
+
+.s-input-outline-danger{
+  border: 1px solid $danger;
+}
+/*checkbox ------------------------------------*/
+.s-select{
+    :not(:-internal-list-box) {
+        overflow: visible !important;
+        background-color: $white;
+        box-shadow: $shadow;
+    }
+    width: 100%;
+    padding: 6px;
+    outline: none;
+    letter-spacing: .2rem;
+    text-indent: 3px;
+    align-items: center;
+    white-space: pre;
+    background-color: $white;
+    box-shadow: $shadow;
+    border-radius: 4px;
+    border-width: 0;
+    cursor: pointer;
+}
+.s-select option{
+    white-space: pre;
+    color: $dark;
+    border: 0;
+    outline: none;
+    font-size: .875rem;
+    text-indent: 30px;
+}
+.s-input-field{
+    border: 0;
+    width: 100%;
+    border-bottom:1px solid rgba($dark, .8);
+    transition: .4s;
+    background: transparent;
+    :focus {
+        outline:0;
+        border-bottom:1px solid $primary;
+        color: rgba($dark, .8);
+    }
+}
+.s-input-group{
+    widows: 100%;
+    display: flex;
+    box-shadow: $shadow1;
+    margin: 2px 0;
+    border: 1px solid rgb(173, 172, 172);
+    align-items: center;
+    border-radius: 4px;
+    transition: ease-in-out .3s;
+    .s-input,.s-input-field,input{
+        width: 100%;
+        border: 0;
+    }
+    .s-label{
+        pointer-events: none;
+    }
+    .s-icon,.s-icon-lg{
+        height: 100%;
+        border-radius: 0;
+        :hover{
+            background:transparent;
+        }
+    }
+}
+.s-input-container{
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    margin: 7px 0;
+    box-shadow: none;
+    .s-label{
+        position: absolute;
+        bottom:0;
+        left: 2px;
+        pointer-events: none;
+        transition: ease-in-out .3s;
+        font-size: .875rem;
+        color: rgba($dark, .8);
+        z-index: 0;
+        opacity: 1;
+    }
+    .s-input-field:focus ~ label{
+        top:0;
+        transition: .4s;
+        opacity: .3;
+        font-size: 6px;
+    }
+}
+.s-input-field:focus{
+    border-color:$primary;
+    outline: none;
+    box-shadow: none;
+}
+//alert --------------------
+.s-alert{
+    display: flex;
+    width: 100%;
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 0 10px;
+    font-size: .875rem;
+    line-height: 1.333rem;
+    font-weight: 450;
+    color: $light;
+    overflow-wrap: break-word;
+}
+.s-alert-content{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+}
+.s-alert-error{
+    background: $danger;
+}
+.s-alert-info{
+    background: $info;
+}
+.s-alert-success{
+    background: $secondary;
+}
+.s-alert-warning{
+    background: $warning;
+}
+
+//outline alert 
+.s-alert-outline-error{
+   border: 1px solid  $danger;
+   color: $danger;
+}
+.s-alert-outline-info{
+ border: 1px solid $info;
+ color: $info;
+}
+.s-alert-outline-success{
+    border: 1px solid  $secondary;
+    color:$secondary;
+}
+.s-alert-outline-warning{
+    border: 1px solid $warning;
+    color:$warning;
+}
+.s-avatar,.s-icon,.s-badg, .s-badg-badg,.s-icon-lg{
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    background-color:$light;
+    padding: 2px;
+}
+.s-avatar-img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.s-toolbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    box-shadow: $shadow-default;
+    padding: 0 12px;
+    background-color: $white ;
+    color: rgba($dark, .8) ;
+    align-items: center;
+    position: relative;
+    .s-icon, li, a{
+        cursor: pointer;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+
+}
+.s-toolbrar-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.s-toolbar.s-left{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    align-items: flex-start;
+    .s-nav-container{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.s-toolbar.s-bottom{
+    position: absolute;
+    bottom: 0;
+}
+.s-nav-container, .s-nav, .s-ul, .s-ol{
+    display: flex;
+    transition: ease-in-out 2s;
+}
+.s-nav-container.s-left,.s-nav-container.dropdown{
+flex-direction: column;
+justify-content: center;
+}
+.s-nav-container.dropdown{
+    .s-ul{
+        flex-direction: column;
+        padding: 16px;
+    }
+    width: inherit;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    top: 60px;
+    background-color: inherit;
+    color: inherit;
+    min-height: 300px;
+    box-shadow: inherit;
+    justify-content: start;
+    transition: ease-in-out .3s;
+}
+.s-app{
+    position: sticky ;
+    top: 0 ;
+}
+.s-drawer{
+    overflow: hidden;
+}
+.s-drawer-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color:$backdrop;
+}
+.s-drawer-contents{
+    height: 100%;
+    overflow: auto;
+    background-color:$white;
+    width: 300px;
+}
+.left{
+    transform:translate(-100%,0);
+}
+.top-left{
+    transform:translate(-100%,-100%); 
+}
+
+//icon
+.s-icon, .s-icon-lg{
+    width: 30px;
+    height: 30px;
+    font-size:24px ;
+    background:none;
+    font-size: inherit;
+    &:hover{
+        background-color: rgba($light, .8);
+        transition: $transition;
+    }
+}
+.s-icon-lg{
+    width: 40px;
+    height: 40px;
+}
+button, form{
+    .s-icon, .s-icon-lg{
+        &:hover{
+            background-color: transparent !important;
+        }
+    }
+}
+button .s-icon{
+    font-size: 20px;
+}
+.s-dropdown{
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: $shadow;
+    cursor: pointer;
+    transition: ease-in-out .8s;
+    .s-arrow{
+        &:hover{
+            background-color: transparent;
+            transform: rotate(180deg);
+        }
+    }
+    .s-ddown-title{
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+        max-width: 100vw;
+        height: 100%;
+        flex-basis: 1;
+        white-space:nowrap;
+        &:hover ~ .s-ddown-menu{
+            display: block;
+        }
+    }
+    .s-ddown-menu{
+        position: absolute;
+        top: 40px;
+        left: 0;
+        padding: 16px;
+        white-space:nowrap;
+        box-shadow:$shadow1;
+        min-height: 50px;
+        display: inline-flex;
+        flex-direction: column;
+        line-height: 1.3rem;
+        z-index: 2;
+        background-color: inherit;
+        border-radius: inherit;
+        display: none;
+        overflow: visible;
+        box-shadow: $shadow;
+        &:hover{
+            display: inline-flex !important;
+            flex-direction: column;
+        }
+    }
+    .s-ddown-item{
+        text-decoration: none;
+        list-style-type: none;
+        padding: 5px 16px;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgba($light, .8);
+        }
+    }
+}
+.s-dropdown.d-right{
+    .s-ddown-menu{
+        top: 40px;
+        left:100%;
+        transform: translate(-100%);
+    }
+}
+
+.s-dropdown.d-top{
+    .s-ddown-menu{
+        top:0;
+        transform: translate(0,-100%);
+    }
+}
+.s-dialog{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 1000;
+    background:$backdrop;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s .2s, opacity .2s linear;
+}
+.s-dialog-container{
+    box-shadow: $shadow;
+    z-index: 1001;
+    opacity: 1;
+    word-break: break-all;
+    position: relative;
+    transition: all .2s;
+}
+.s-small,.s-larg,.s-medium{
+    background: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 16px;
+    min-height: 200px;
+    max-height: 500px;
+}
+.s-dialog-action{
+    width: 100%;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    margin-top:10px;
+}
+.s-dialog.s-show{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .4s linear;
+    //animation: open 2s;
+}
+@keyframes open{
+    from{opacity: 0}
+    to{opacity:1}
+}
+@keyframes close{
+    from{opacity: 1}
+    to{opacity:0}
+}
+//accordin 
+.s-according{
+    overflow: hidden;
+    width: 100%;
+}
+.s-accord-item{
+    margin: 1px 0;
+    overflow: hidden;
+    box-shadow: $shadow1;
+    background-color: $white;
+}
+.s-accord-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 3px 16px;
+    z-index: 3;
+    .s-icon{
+        cursor: pointer;
+    }
+}
+.s-accord-item:last-child{
+    border-radius: 0 0 4px 4px;
+} 
+.s-accord-item:first-child{
+    border-radius: 4px 4px 0 0;
+} 
+.s-accord-content{
+    padding: 16px;
+    transition: all 2s linear;
+    display: none;
+    opacity: 0;
+    z-index: -1;
+    background-color: white;
+}
+.s-form{
+    line-height: 1.956em;
+}
+.s-form-group{
+    line-height: 1.956em;
+    width: 100%;
+    position: relative;
+}
+.s-password{
+    position: relative;
+    .s-togle-icon{
+        position: absolute;
+        top: 3px;
+        right: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+//flip card 
+.s-flip-card{
+    width: 100% !important;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    background:$white;
+    padding: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*&:hover{
+        transform: rotateY(180deg);
+    }*/
+    .s-flip-card-front, .s-flip-card-back{
+        position: absolute;
+        width: 100%;
+        backface-visibility: hidden;
+        background-color: inherit;
+    }
+    .s-flip-card-back {
+        transform: rotateY(180deg);
+      }
+}
+.s-flip{
+    transform: rotateY(180deg);
+}
+.s-f-back{
+    transform: rotateY(360deg);
+}
+//s-list //s-accordin
+.s-according{
+    overflow: hidden;
+    width: 100%;
+}
+.s-accord-item{
+    margin: 1px 0;
+    overflow: hidden;
+}
+.s-accord-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 3px 16px;
+    z-index: 3;
+}
+.s-accord-item:last-child{
+    border-radius: 0 0 4px 4px;
+} 
+.s-accord-item:first-child{
+    border-radius: 4px 4px 0 0;
+} 
+.s-accord-content{
+    padding: 16px;
+    transition: all 2s linear;
+    display: none;
+    opacity: 0;
+    z-index: -1;
+    background-color: white;
+}
+.s-list{
+    padding: 16px;
+    background-color:$white;
+    height: 100%;
+    list-style-type: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 2.0rem;
+    letter-spacing: 0.0071428571em; 
+    transition: .4s ease-in-out;
+}    
+.s-list-item{
+    list-style-type: none;
+    line-height: 1.2rem;
+    border-radius: 4px;
+    padding: 5px;
+    white-space: nowrap ;
+}
+.s-hover .s-list-item:hover{     
+    background: rgba($primary, .3);
+}
+.s-list-item:hover{
+    background: none;
+}
+.s-list-link{
+    font-size: 1.0rem;
+    font-weight: 500;
+    color:$dark;
+    text-decoration: none;
+}
+.s-card-content{
+    width: 100%;
+    padding: 16px;
+    line-height: 1.5;
+    font-size: 0.975rem;
+}
+.s-card-title{
+    font-weight:500;
+    font-size:1.3rem;
+
+}
+.s-card-action, .s-card-footer{
+    margin-top:10px;
+}
+.s-card-footer{
+    padding: 16px;
+    border-radius: 0 0 4px 4px;
+}
+.s-card-image, .s-card-header{
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    img{
+        border-radius: 4px 4px 0 0 ; 
+    }
+}
+.s-card-header{
+    padding: 16px;
+}
+.s-responsive-img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+}
+
+//carousel2
+.s-carosul {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  
+  
+  /* The dots/bullets/indicators */
+  .s-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .s-dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+@media (max-width:768px) {  
+.s-larg{
+        width: 90%;
+    }
+ } 
+ @media (max-width:500px) {
+    .s-drawer-contents{
+        width:70%;
+    }
+ }
+@media (min-width: 0) {  
+    .s-flip-card{
+        width: 250px;
+    }
+}
+
+/*medium  devices*/
+@media (min-width: 768px) {  
+    .s-flip-card{
+        width: 300px;
+    }
+    .s-drawer-contents{
+        width: 300px;
+    }
+}
+
+/*larg devices*/
+@media (min-width: 992px) { 
+    .s-flip-card{
+        width: 350px;
+    }
+}
+
+/*extra larg devices*/
+@media (min-width: 1200px) {  
+    
+}
+
