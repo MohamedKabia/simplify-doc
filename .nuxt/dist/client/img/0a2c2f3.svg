@@ -1,0 +1,18 @@
+<svg width="841.9" height="595.3" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style>.cls-1{fill:#3f5eab;}</style>
+ </defs>
+ <title>Artboard 2</title>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="null" id="svg_1" d="m677.244297,27.815042l-440.612811,0a40.971879,42.305759 0 0 0 -41.020801,42.356273l0,454.629054a41.045262,42.381531 0 0 0 41.020801,42.684617l440.612811,0a41.069722,42.406788 0 0 0 41.045262,-42.684617l0,-454.629054a40.99634,42.331016 0 0 0 -41.045262,-42.356273zm-56.993718,438.161379l-326.551992,0l326.551992,-336.880129l0,336.880129z" class="cls-1"/>
+  <text style="cursor: move;" transform="rotate(-45.24625778198242 423.95312500000017,307.5) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_2" y="316" x="381.449997" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="null" fill="#ffffff">Simplify</text>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_3" y="331" x="624.449997" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="null" fill="#ffffff">JS</text>
+  <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_4" y="491" x="441.449997" stroke-opacity="null" stroke-width="0" stroke="null" fill="#ffffff">CSS</text>
+  <text stroke="null" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_5" y="323" x="646.449997" stroke-opacity="null" stroke-width="0" fill="#ffffff"/>
+ </g>
+</svg>

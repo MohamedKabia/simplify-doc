@@ -5,49 +5,39 @@
                 <div class="s-row">
                     <div class="s-col-lg-6 s-col-sm-12 s-col-md-12">
                        <div class="s-card-img">
-                            <nuxt-link to="#">
-                                <img src="https://rb.gy/uvrbib" alt="shopright" class="s-responsive">
-                           </nuxt-link>
+                            <a href="https://shopright.netlify.app">
+                                <img src="../static/imgs/simplifyshop.jpg" alt="shopright" class="s-responsive">
+                           </a>
                         </div>
                         <div class="s-card-content">
-                            <p>Simplify ecomers site</p>
+                            <p>Simplify E-commerce site</p>
                         </div>
                     </div>
 
                     <!--ex 2--->
                     <div class="s-col-lg-6 s-col-sm-12 s-col-md-12">
                         <div class="s-card-img">
-                            <nuxt-link to="#">
-                                <img src="https://rb.gy/uvrbib" alt="shopright" class="s-responsive">
-                           </nuxt-link>
+                            <a href="https://tosexample.netlify.app">
+                               <img src="../static/imgs/carousel.jpg" alt="shopright" class="s-responsive">
+                           </a>
                         </div>
                         <div class="s-card-content">
-                            <p>Simplify ecomers site</p>
+                            <p>Simplify Carousell and TOS</p>
                         </div>
                     </div>
 
                     <!---ex 3--->
                     <div class="s-col-lg-6 s-col-sm-12 s-col-md-12">
                         <div class="s-card-img">
-                            <nuxt-link to="#">
-                                <img src="https://rb.gy/uvrbib" alt="shopright" class="s-responsive">
-                           </nuxt-link>
+                            <a href="https://zamzamprinting.netlify.app/">
+                               <img src="../static/imgs/zamzam.jpg" alt="shopright" class="s-responsive">
+                           </a>
                         </div>
                         <div class="s-card-content">
-                            <p>Simplify ecomers site</p>
+                            <p>Simplify business template</p>
                         </div>
                     </div>
-
-                     <!---ex 3--->
-                    <div class="s-col-lg-6 s-col-sm-12 s-col-md-12">
-                        <div class="s-card-img">
-                            <img src="https://rb.gy/uvrbib" alt="shopright" class="s-responsive">
-                        </div>
-                        <div class="s-card-content">
-                            <p>Simplify ecomers site</p>
-                        </div>
-                    </div>
-
+                     <!---ex 4--->
                 </div>
 
                 <div class="s-row s-mt-60">
